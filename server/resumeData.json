@@ -1,0 +1,18 @@
+{
+  "name": "Zainab Amin",
+  "summary": "Final year BTech student skilled in MERN stack and AI development.",
+  "skills": ["React", "Node.js", "MongoDB", "Express", "Python"],
+  "experience": [
+    {
+      "title": "Backend Intern",
+      "company": "Nexus Void",
+      "desc": "Built RESTful APIs for Pomodoro app with JWT-based auth."
+    }
+  ],
+  "projects": [
+    {
+      "name": "ReflectAI",
+      "desc": "Diary app with sentiment analysis using Ollama and Mistral."
+    }
+  ]
+}
