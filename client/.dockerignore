@@ -1,0 +1,48 @@
+# ============================================
+# BEGINNER-FRIENDLY .dockerignore FILE
+# ============================================
+# This file tells Docker which files to IGNORE
+# (files that don't need to be copied into the container)
+
+# Don't copy node_modules - we'll install fresh dependencies
+node_modules
+
+# Don't copy git files - not needed in the container
+.git
+.gitignore
+
+# Don't copy documentation - not needed to run the app
+README.md
+
+# Don't copy environment files - these should be set differently
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Don't copy build outputs - we'll build fresh
+dist
+build
+
+# Don't copy log files - not needed
+*.log
+npm-debug.log*
+
+# Don't copy system files
+.DS_Store
+Thumbs.db
+
+# Don't copy Docker files themselves
+Dockerfile*
+.dockerignore*
+
+# ============================================
+# WHY DO WE IGNORE THESE FILES?
+# ============================================
+# - node_modules: We install fresh dependencies in the container
+# - .git: Git history isn't needed to run the app
+# - dist/build: We build fresh in the container
+# - .env files: Environment variables should be passed to container differently
+# - Log files: Not needed and can be large
+# - System files: OS-specific files that aren't needed 
