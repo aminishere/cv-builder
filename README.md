@@ -120,13 +120,8 @@ docker rmi cv-builder
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🙏 Acknowledgments
-
-- React team for the amazing framework
 - Docker team for containerization technology
 - AI/ML community for inspiration
 
