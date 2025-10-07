@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const { generateBulletPoints } = require('../ai/ollama');
-const { analyzeSkillGaps } = require('../ai/gapAnalyzer');
-const { scoreResumeForATS } = require('../ai/atsOptimizer');
+const { generateBulletPoints } = require('../llm/generate-bullets');
+const { analyzeSkillGaps } = require('../llm/analyze-skill-gaps');
+const { scoreResumeForATS } = require('../llm/score-ats');
 const { getCache, setCache } = require('../services/cache');
 
 router.post('/generate', async (req, res) => {

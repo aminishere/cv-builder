@@ -1,4 +1,5 @@
-const { runOllama } = require('../child-process');
+// server/src/llm/analyze-skill-gaps.js
+const { runOllama } = require('./ollama-runner');
 
 async function analyzeSkillGaps(resume, jobDesc) {
   const prompt = `
@@ -18,3 +19,5 @@ Return the result as a plain list (no explanation).
 }
 
 module.exports = { analyzeSkillGaps };
+
+

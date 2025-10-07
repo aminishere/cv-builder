@@ -1,5 +1,5 @@
-// server/src/ai/ollama.js
-const { runOllama } = require('../child-process');
+// server/src/llm/generate-bullets.js
+const { runOllama } = require('./ollama-runner');
 
 async function generateBulletPoints(resume, jobDesc) {
   const prompt = `
@@ -16,3 +16,5 @@ Generate 3-5 achievement-focused bullet points tailored for the job.
 }
 
 module.exports = { generateBulletPoints };
+
+

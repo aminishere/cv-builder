@@ -1,4 +1,5 @@
-const { runOllama } = require('../child-process');
+// server/src/llm/score-ats.js
+const { runOllama } = require('./ollama-runner');
 
 async function scoreResumeForATS(resume, jobDesc) {
   const prompt = `
@@ -22,3 +23,5 @@ Respond with only a number (no explanation).
 }
 
 module.exports = { scoreResumeForATS };
+
+

@@ -1,4 +1,4 @@
-// server/src/child-process.js
+// server/src/llm/ollama-runner.js
 const { spawn } = require('child_process');
 
 function runOllama(prompt, model = 'mistral') {
@@ -27,3 +27,5 @@ function runOllama(prompt, model = 'mistral') {
 }
 
 module.exports = { runOllama };
+
+
