@@ -10,7 +10,7 @@ A React-based CV Builder application that uses AI to analyze resumes and job des
 - **Containerized**: Runs consistently in Docker containers
 - **Modern UI**: Clean, responsive React interface
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 cv-builder/
