@@ -24,6 +24,16 @@ cv-builder/
 │   └── package.json       
 └── README.md              
 ```
+```
+repo-analyzer/
+├─ package.json
+└─ src/
+   ├─ server.js
+   ├─ tarball.js
+   ├─ analyze.js
+   ├─ ollama.js
+   └─ util.js
+```
 
 ##  Technology Stack
 
